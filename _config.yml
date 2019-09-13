@@ -81,13 +81,13 @@ analytics:
 # Site Author
 author:
   name             : "Tommaso Dreossi"
-  avatar           : "profile.png"
+  avatar           : "pic.png"
   bio              : "Applied Scientist, Amazon A9"
   location         : "Palo Alto, CA"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=wlLtbpoAAAAJ&hl=en"
-  email            : "dreossit@amazon.com"
+  email            : "tommasodreossi@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
