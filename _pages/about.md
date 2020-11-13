@@ -8,8 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-I am currently an Applied Scientist at Amazon A9 in Palo Alto, California.
+Currently: Applied Scientist at Amazon A9 in Palo Alto, California.
+* Responsible for designing and implementing Machine and Deep Learning models to rank products on Amazon’s search engine.
+* Raising [Amazon’s Science bar](https://www.amazon.science/search?q=tommaso+dreossi#nt=navsearch).
 
-Previously, I was a postdoctoral researcher in the group of Sanjit Seshia at the department of Electrical Engineering and Computer Science of UC Berkeley, California.
+Previously: Postdoctoral researcher at UC Berkeley, California.
+*  Worked on verification and testing of robotic systems with Machine Learning components.
+*  Creator of [VerifAI](https://github.com/BerkeleyLearnVerify/VerifAI), a tool for testing the correctness of Computer Vision modules of self-driving cars.
+*  Co-author of [Scenic](https://github.com/BerkeleyLearnVerify/Scenic), a programming language for generating simulated traffic scenarios and test autonomous vehicles.
 
-I obtained my Ph.D. in Computer Science from the University Joseph Fourier in Grenoble (France) and the University of Udine (Italy), working under the joint supervision of Thao Dang and Carla Piazza.
+Obtained my Ph.D. in Computer Science from the University Joseph Fourier in Grenoble (France) and the University of Udine (Italy).
+* Thesis on simulation of nonlinear difference equations. 
+* Creator of [Sapo](https://github.com/dreossi/sapo), a tool for reachability analysis and correctness verification of robotic and biological systems.
+* Creator of RRT-Rex, a tool for testing engine components [adopted by Toyota](https://patents.google.com/patent/US9798652B2/en).
