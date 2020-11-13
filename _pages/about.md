@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Currently: Applied Scientist at Amazon A9 in Palo Alto, California.
+Currently: Applied Scientist at Amazon Search and AI in Palo Alto, California.
 * Responsible for designing and implementing Machine and Deep Learning models to rank products on Amazon’s search engine.
 * Raising [Amazon’s Science bar](https://www.amazon.science/search?q=tommaso+dreossi#nt=navsearch){:target="_blank"}.
 
