@@ -88,4 +88,29 @@ const formatted = new Date(date).toLocaleDateString('en-US', {
     border-top: 1px solid #2a2a2a;
     margin: 2.5rem 0;
   }
+  .prose table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    margin: 2rem 0;
+  }
+  .prose th {
+    text-align: left;
+    color: #e5e5e5;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #2a2a2a;
+    white-space: nowrap;
+  }
+  .prose td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #1f1f1f;
+    color: #b0b0b0;
+    vertical-align: top;
+  }
+  .prose tr:last-child td {
+    border-bottom: none;
+  }
 </style>
