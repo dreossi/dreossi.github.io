@@ -112,6 +112,28 @@ const formatted = new Date(date).toLocaleDateString('en-US', {
   .prose tr:last-child td {
     border-bottom: none;
   }
+  .prose sup {
+    font-size: 0.7rem;
+    line-height: 0;
+    vertical-align: super;
+  }
+  .prose sup a {
+    border-bottom: none;
+    color: #888888;
+  }
+  .prose sup a:hover {
+    color: #1a1a1a;
+    opacity: 1;
+  }
+  .prose #fn1, .prose #fn2, .prose #fn3, .prose #fn4 {
+    font-size: 0.85rem;
+    color: #666666;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  .prose #fn1 a, .prose #fn2 a, .prose #fn3 a, .prose #fn4 a {
+    color: #666666;
+  }
   .prose ul {
     list-style: disc;
     padding-left: 1.5rem;
