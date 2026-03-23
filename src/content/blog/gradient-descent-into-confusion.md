@@ -4,7 +4,7 @@ date: "2026-03-22"
 description: "On how AI renamed mathematics, and what that costs us."
 ---
 
-### Opening scene: the moment of recognition
+### opening scene: the moment of recognition
 
 About fifteen years ago, the first time I heard the term *backpropagation*, I imagined something entirely new — a novel algorithm that somehow spreads knowledge through a network of artificial neurons. I assumed that the mechanism behind machine learning had to be something Computer Science or Mathematics had never seen before. How else could you explain why AI took so long to take off? And listen to the sound of the word: *backpropagation*. What a compelling music compared to something like *counting sort*, *discrete finite automata*, or *first-order derivative*.
 
@@ -12,7 +12,7 @@ Then, studying its definition, I found something unexpected: backpropagation use
 
 It turns out that backpropagation IS the chain rule. An entire thriving domain had coined and accepted a new term for something that had existed for more than 300 years.
 
-### Zoom out: the pattern is not isolated
+### zoom out: the pattern is not isolated
 
 Backpropagation wasn't an exception. The pattern of renaming or overloading existing terms runs through the field like a thread. Take *regularization*: in statistics it is constrained optimization — a well-defined mathematical concept. In ML it gets reframed as "preventing overfitting", an umbrella that quietly absorbs penalty terms, dropout, data augmentation, and model capacity reduction under a single, vague label.
 
@@ -22,7 +22,7 @@ And then there's the *transformer* — the T in ChatGPT. It has nothing to do wi
 
 It seems there's quite a bit of confusion in ML... or is it AI? What's the difference between the two?
 
-### Zoom in: why does this happen?
+### zoom in: why does this happen?
 
 It is common in the history of science for independent discoveries to converge on the same result — scientists working in silos, unaware of each other, arriving at the same place with different names. The classic example is Newton and Leibniz independently discovering calculus in the 1600s.
 
@@ -34,7 +34,7 @@ Beyond accessibility, there is a subtler bias: the pull of biological metaphor. 
 
 Finally, there is a less noble reason: naming is how you claim it. Call it the chain rule and you can't publish it — it already belongs to Leibniz. Name an architecture AlexNet and it belongs to Alex forever. Coin "transformer" and your name is embedded in every ChatGPT conversation that ever happens. Inventions and their names are how academia builds prestige and careers. The incentive to rename is structural, human, and entirely predictable.
 
-### Resolution: reframe the opening
+### resolution: reframe the opening
 
 Fifteen years ago, I had everything I needed. The chain rule was already in my head, embeddings existed in my mind as high-dimensional points, and composite functions I had derived many times already provided the backbone for what I was being taught. What I was missing wasn't knowledge — it was the experience and confidence to look past the name. Knowing a technique and recognizing it under a different label are two different things.
 
