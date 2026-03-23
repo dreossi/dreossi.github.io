@@ -1,7 +1,7 @@
 ---
 title: "The good, the bad, and the ugly of data science and ML in tech/biotech/academia"
 date: "2024-08-14"
-description: "A structured comparison of career experiences for computational scientists across big tech, biotech, and academia."
+description: "A structured of career experiences for computational scientists across big tech, biotech, and academia."
 ---
 
 *Co-authored with [Mohammad Muneeb Sultan](https://msultan.github.io).*
