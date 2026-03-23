@@ -21,7 +21,7 @@ It turns out that backpropagation is the chain rule.<sup><a href="#fn1">1</a></s
 Backpropagation wasn't an exception. The pattern on renaming terms in AI wasn't isolated. Take *regularization*: in statistics it is constrained optimization whereas in ML it's framed as "preventing overfitting",
 a blend of methods that includes adding penalty terms to the loss function, dropout, data augmentation, larger dataset, reducing a model capacity, etc.
 
-In statistics, a *latent space*, which comes from Latin latere, "to lie hidden", is assumed to exist but can't be directly observed. In ML, an
+In statistics, a *latent space*, which comes from Latin *latere*, "to lie hidden", is assumed to exist but can't be directly observed. In ML, an
 embedding in the latent space is fully observable compressed information; it's just not human-interpretable.
 And if you were wondering, an *embedding*, is a vector; *pooling* is downsampling; a *logit* is a raw score.
 
@@ -31,7 +31,7 @@ It seems that there's quite a bit of confusion in ML... or is it AI? What's the
 difference between the two?
 
 
-### Many reasons to rename
+### Siloed, biological, and strategic
 
 It is common in the history of science that independent discoveries led to the same results. Scientists working in silos arriving at the same place with different names. The classic example is Newton and Leibniz independently discovering calculus in 1600s.<sup><a href="#fn4">4</a></sup>
 
@@ -60,7 +60,7 @@ Inventions and their names are how academia builds prestige and careers.
 The incentive to rename is structural and human, not malicious.
 
 
-### Navigating AI terminology
+### The optimal amount of nonsense
 
 Fifteen years ago, I had everything I needed.
 The chain rule was already in my head, embeddings existed
