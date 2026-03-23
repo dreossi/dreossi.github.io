@@ -20,22 +20,21 @@ const { title = 'Tommaso Dreossi', description = 'Personal website and blog.' } 
   </head>
   <body class="bg-bg text-text font-serif antialiased">
     <div class="max-w-2xl mx-auto px-8 pt-16 pb-24">
-      <header class="mb-16">
+      <header class="mb-16 flex items-center justify-between">
         <a href="/" class="inline-block text-xs tracking-widest uppercase border-b border-text pb-0.5 hover:opacity-60 transition-opacity font-serif">
           Tommaso Dreossi
         </a>
-      </header>
-      <main>
-        <slot />
-      </main>
-      <footer class="mt-24 pt-8 border-t border-border">
-        <div class="flex gap-6">
+        <nav class="flex gap-6">
           <a href="https://github.com/dreossi" class="text-xs tracking-widest uppercase text-muted hover:text-text transition-colors">GitHub</a>
           <a href="https://www.linkedin.com/in/tommaso-dreossi/" class="text-xs tracking-widest uppercase text-muted hover:text-text transition-colors">LinkedIn</a>
           <a href="https://scholar.google.com/citations?user=wlLtbpoAAAAJ&hl=en" class="text-xs tracking-widest uppercase text-muted hover:text-text transition-colors">Scholar</a>
           <a href="/rss.xml" class="text-xs tracking-widest uppercase text-muted hover:text-text transition-colors">RSS</a>
-        </div>
-      </footer>
+        </nav>
+      </header>
+      <main>
+        <slot />
+      </main>
+      <footer class="mt-24"></footer>
     </div>
   </body>
 </html>
