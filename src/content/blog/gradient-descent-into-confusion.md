@@ -33,7 +33,7 @@ difference between the two?
 
 ### Siloed, biological, and strategic
 
-It is common in the history of science that independent discoveries led to the same results. Scientists working in silos arriving at the same place with different names. The classic example is Newton and Leibniz independently discovering calculus in 1600s.<sup><a href="#fn4">4</a></sup>
+It is common in the history of science that independent discoveries led to the same results. Scientists working in silos arriving at the same place with different names. The classic example is Newton and Leibniz independently discovering calculus in 1600s.<sup><a href="#fn3">3</a></sup>
 
 But silos don't explain it all. Hinton et al., in the paper that introduced backpropagation, state: "the key insight is that the *chain rule* of calculus can be used to compute efficiently the gradient of a cost function with respect to the weights". They knew.
 They knew the math term and still renamed the method
@@ -79,4 +79,4 @@ One last thing: the psychological journey from hearing a term for the first time
 
 <p id="fn1"><sup>1</sup> Some purists might argue that the chain rule is the mathematical foundation while backpropagation is the implementation.</p>
 <p id="fn2"><sup>2</sup> <a href="https://en.wikipedia.org/wiki/Attention_Is_All_You_Need">Attention Is All You Need, Wikipedia</a></p>
-<p id="fn4"><sup>4</sup> Steven Strogatz, <em>Infinite Powers</em> (2019)</p>
+<p id="fn3"><sup>3</sup> Steven Strogatz, <em>Infinite Powers</em> (2019)</p>
