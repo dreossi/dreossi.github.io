@@ -25,7 +25,7 @@ In statistics, a *latent space*, which comes from Latin *latere*, "to lie hidden
 embedding in the latent space is fully observable compressed information; it's just not human-interpretable.
 And if you were wondering, an *embedding*, is a vector; *pooling* is downsampling; a *logit* is a raw score.
 
-And there is the *Transformer*, the T in ChatGPT. It has nothing to do with electrical transformers or Japanese robots. One of the authors, Jakob Uszkoreit, suggested the name simply because he liked the sound of it — an early design document was even titled *"Transformers: Iterative Self-Attention and Processing for Various Tasks"* and featured characters from the Transformers franchise.<sup><a href="#fn2">2</a></sup> But isn't that the case for any neural network?
+And there is the *Transformer*, the T in ChatGPT. It has nothing to do with electrical transformers. One of the authors, J. Uszkoreit, suggested the name simply because he liked the sound of it. An early design document was even titled *"Transformers: Iterative Self-Attention and Processing for Various Tasks"* and featured characters from the Transformers franchise.<sup><a href="#fn2">2</a></sup>
 
 It seems that there's quite a bit of confusion in ML... or is it AI? What's the
 difference between the two?
