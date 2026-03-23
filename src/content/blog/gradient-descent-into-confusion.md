@@ -78,5 +78,5 @@ One last thing: the psychological journey from hearing a term for the first time
 ---
 
 <p id="fn1"><sup>1</sup> Some purists might argue that the chain rule is the mathematical foundation while backpropagation is the implementation.</p>
-<p id="fn2"><sup>2</sup> <a href="https://en.wikipedia.org/wiki/Attention_Is_All_You_Need">Attention Is All You Need — Wikipedia</a></p>
+<p id="fn2"><sup>2</sup> <a href="https://en.wikipedia.org/wiki/Attention_Is_All_You_Need">Attention Is All You Need, Wikipedia</a></p>
 <p id="fn4"><sup>4</sup> Steven Strogatz, <em>Infinite Powers</em> (2019)</p>
