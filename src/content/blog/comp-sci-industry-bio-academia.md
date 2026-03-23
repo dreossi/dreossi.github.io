@@ -1,12 +1,12 @@
 ---
-title: "The good, the bad, and the ugly of data science and ML in tech/biotech/academia -- version 1.0"
+title: "The good, the bad, and the ugly of data science and ML in tech/biotech/academia"
 date: "2024-08-14"
 description: "A structured comparison of career experiences for computational scientists across big tech, biotech, and academia."
 ---
 
 *Co-authored with [Mohammad Muneeb Sultan](https://msultan.github.io).*
 
-### introduction
+### Introduction
 
 Navigating your career as a computational scientist requires more than just technical knowledge. Well funded big tech vs mission oriented biotech vs independence focused academia offer you differing and unique experiences.
 
@@ -14,7 +14,7 @@ In this post, we will cover the crucial differences between project ownership, f
 
 > **Pro Tip:** The views expressed in this post are the opinions of the authors. Please note that there are likely exceptions to each of these topics in each area. Your mileage will vary.
 
-### massive table of many things
+### Massive table of many things
 
 Instead of a long-format comparison between big tech, biotech, and academia, we've distilled a table organized around four key themes that capture what you can expect in each of these environments:
 
@@ -38,6 +38,6 @@ By breaking down these themes, we aim to provide a clear framework for understan
 | **Resources and Infrastructure** | Funding & Financial Stability: How much of a runway does my company have? | Large, stable. | Moderate; stability varies. | Limited; grant-dependent. |
 | | Compute Resources & Infrastructure: How much compute resources/infrastructure should I expect? | High; cutting-edge resources. | Moderate; varies by company. | Limited; shared resources. |
 
-### summary
+### Summary
 
 Jeff Bezos has a famous framework on reversible and irreversible decisions, arguing that reversible decisions should be made quickly, while irreversible ones require careful consideration. Choosing the right place to work falls somewhere in between. We hope that this post serves as a guide to help computational scientists navigate the various facets of career choices in big tech, biotech, and academia. While these might be helpful, remember that careers are long, and it's normal to make mistakes or pick the wrong path at times. There will always be new opportunities, and in the end, you will be okay.
