@@ -19,15 +19,15 @@ It turns out that backpropagation is the chain rule.<sup><a href="#fn1">1</a></s
 
 ### A pattern emerges
 Backpropagation wasn't an exception. The pattern on renaming terms in AI wasn't isolated. Take *regularization*: in statistics it is constrained optimization whereas in ML it's framed as "preventing overfitting",
-a blend of methods that includes adding penalty terms to the loss function, dropout, data augmentation, larger dataset, reducing the a model capacity, etc.
+a blend of methods that includes adding penalty terms to the loss function, dropout, data augmentation, larger dataset, reducing a model capacity, etc.
 
 In statistics, a *latent space*, which comes from Latin latere, "to lie hidden", is assumed to exist but can't be directly observed. In ML, an
 embedding in the latent space is fully observable compressed information; it's just not human-interpretable.
 And if you were wondering, an *embedding*, is a vector; *pooling* is downsampling; a *logit* is a raw score.
 
-And the there is the *Transformer*, the T in ChatGPT. It has nothing to do with electrical transformers or Japanese robots. It's called like that because it "transforms input representations into output representations through its layers".<sup><a href="#fn2">2</a>,<a href="#fn3">3</a></sup> But isn't that the case for any neural network?
+And there is the *Transformer*, the T in ChatGPT. It has nothing to do with electrical transformers or Japanese robots. It's called like that because it "transforms input representations into output representations through its layers".<sup><a href="#fn2">2</a>,<a href="#fn3">3</a></sup> But isn't that the case for any neural network?
 
-Is seems that there's quite confusion in ML... or is it AI? What's the
+It seems that there's quite a bit of confusion in ML... or is it AI? What's the
 difference between the two?
 
 
@@ -39,7 +39,7 @@ But silos don't explain it all. Hinton et al., in the paper that introduced back
 They knew the math term and still renamed the method
 after its behavior rather than its math foundation.
 
-Naming something after its behavior suggests lowers the barrier to entry. Back-propagation is self-explanatory and it conveys the visual idea of the
+Naming something after its behavior lowers the barrier to entry. Back-propagation is self-explanatory and it conveys the visual idea of the
 error adjustment floating backwards through the network.
 We can all agree that "training a neural net via backprop" is lower friction than
 "find parameter values that make the output of a composite non-linear function as close as
