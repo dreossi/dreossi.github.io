@@ -25,7 +25,7 @@ In statistics, a *latent space*, which comes from Latin *latere*, "to lie hidden
 embedding in the latent space is fully observable compressed information; it's just not human-interpretable.
 And if you were wondering, an *embedding*, is a vector; *pooling* is downsampling; a *logit* is a raw score.
 
-And there is the *Transformer*, the T in ChatGPT. It has nothing to do with electrical transformers or Japanese robots. It's called like that because it "transforms input representations into output representations through its layers".<sup><a href="#fn2">2</a>,<a href="#fn3">3</a></sup> But isn't that the case for any neural network?
+And there is the *Transformer*, the T in ChatGPT. It has nothing to do with electrical transformers or Japanese robots. One of the authors, Jakob Uszkoreit, suggested the name simply because he liked the sound of it — an early design document was even titled *"Transformers: Iterative Self-Attention and Processing for Various Tasks"* and featured characters from the Transformers franchise.<sup><a href="#fn2">2</a></sup> But isn't that the case for any neural network?
 
 It seems that there's quite a bit of confusion in ML... or is it AI? What's the
 difference between the two?
@@ -78,6 +78,5 @@ One last thing: the psychological journey from hearing a term for the first time
 ---
 
 <p id="fn1"><sup>1</sup> Some purists might argue that the chain rule is the mathematical foundation while backpropagation is the implementation.</p>
-<p id="fn2"><sup>2</sup> <a href="https://discuss.huggingface.co/t/why-are-transformers-called-transformers/11607">Why are transformers called transformers? — Hugging Face Forums</a></p>
-<p id="fn3"><sup>3</sup> <a href="https://www.quora.com/Why-are-transformers-in-the-machine-learning-sense-called-transformers">Why are transformers called transformers? — Quora</a></p>
+<p id="fn2"><sup>2</sup> <a href="https://en.wikipedia.org/wiki/Attention_Is_All_You_Need">Attention Is All You Need — Wikipedia</a></p>
 <p id="fn4"><sup>4</sup> Steven Strogatz, <em>Infinite Powers</em> (2019)</p>
