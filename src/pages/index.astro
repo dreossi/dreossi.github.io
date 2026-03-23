@@ -35,6 +35,9 @@ const posts = (await getCollection('blog'))
             <strong class="font-serif font-normal text-lg border-b border-text group-hover:opacity-60 transition-opacity">
               {post.data.title}
             </strong>
+            {post.data.description && (
+              <p class="mt-1 text-muted leading-snug">{post.data.description}</p>
+            )}
           </a>
         </li>
       ))}
