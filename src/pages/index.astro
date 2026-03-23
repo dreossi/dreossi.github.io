@@ -3,38 +3,54 @@ import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog'))
-  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
-  .slice(0, 5);
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 ---
 
 <Base>
   <section class="mb-20">
-    <h1 class="text-2xl font-medium tracking-tight text-text mb-4">Tommaso Dreossi</h1>
-    <p class="text-muted leading-relaxed max-w-lg">
-      I write about machine learning, software, and ideas I find worth thinking about.
-    </p>
+    <h1 class="font-display text-5xl font-bold mb-10 leading-tight">Tommaso Dreossi</h1>
+    <div class="prose-home">
+      <p>
+        I'm a Staff ML Scientist at <a href="https://insitro.com">insitro</a>, working on machine learning for biology.
+        Before that, I was at Amazon and UC Berkeley.
+      </p>
+      <p>
+        I write about machine learning, software, and ideas I find worth thinking about.
+      </p>
+    </div>
   </section>
 
   <section>
-    <h2 class="text-xs font-mono text-muted uppercase tracking-widest mb-8">Recent writing</h2>
-    <ul class="space-y-6">
+    <h2 class="text-xs tracking-widest uppercase text-muted mb-8">Writing</h2>
+    <ul class="space-y-8">
       {posts.map((post) => (
         <li>
-          <a href={`/blog/${post.slug}`} class="group flex items-baseline justify-between gap-4">
-            <span class="text-text group-hover:opacity-70 transition-opacity">
+          <a href={`/blog/${post.slug}`} class="group block">
+            <strong class="font-serif font-normal text-lg border-b border-text group-hover:opacity-60 transition-opacity">
               {post.data.title}
-            </span>
-            <span class="text-muted text-sm font-mono shrink-0">
-              {new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
-            </span>
+            </strong>
+            {post.data.description && (
+              <p class="mt-1 text-muted leading-snug">{post.data.description}</p>
+            )}
           </a>
         </li>
       ))}
     </ul>
-    {posts.length > 0 && (
-      <a href="/blog" class="inline-block mt-10 text-sm text-muted hover:text-text transition-colors">
-        All posts →
-      </a>
-    )}
   </section>
 </Base>
+
+<style>
+  .prose-home p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+  .prose-home a {
+    border-bottom: 1px solid #1a1a1a;
+    text-underline-offset: 2px;
+  }
+  .prose-home a:hover {
+    opacity: 0.6;
+  }
+</style>

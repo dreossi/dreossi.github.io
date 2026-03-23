@@ -16,21 +16,21 @@ const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
 ---
 
 <Base title="Blog">
-  <h1 class="text-2xl font-medium tracking-tight text-text mb-16">Blog</h1>
-  <div class="space-y-12">
+  <h1 class="font-display text-5xl font-bold mb-16">Writing</h1>
+  <div class="space-y-16">
     {years.map((year) => (
       <section>
-        <h2 class="text-xs font-mono text-muted uppercase tracking-widest mb-6">{year}</h2>
-        <ul class="space-y-5">
+        <h2 class="text-xs tracking-widest uppercase text-muted mb-8">{year}</h2>
+        <ul class="space-y-8">
           {byYear[year].map((post) => (
             <li>
-              <a href={`/blog/${post.slug}`} class="group flex items-baseline justify-between gap-4">
-                <span class="text-text group-hover:opacity-70 transition-opacity">
+              <a href={`/blog/${post.slug}`} class="group block">
+                <strong class="font-serif font-normal text-lg border-b border-text group-hover:opacity-60 transition-opacity">
                   {post.data.title}
-                </span>
-                <span class="text-muted text-sm font-mono shrink-0">
-                  {new Date(post.data.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                </span>
+                </strong>
+                {post.data.description && (
+                  <p class="mt-1 text-muted leading-snug">{post.data.description}</p>
+                )}
               </a>
             </li>
           ))}

@@ -8,7 +8,7 @@ const { title = 'Tommaso Dreossi', description = 'Personal website and blog.' } 
 ---
 
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,26 +16,22 @@ const { title = 'Tommaso Dreossi', description = 'Personal website and blog.' } 
     <title>{title === 'Tommaso Dreossi' ? title : `${title} — Tommaso Dreossi`}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Mono&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-bg text-text min-h-screen font-sans antialiased">
-    <div class="max-w-2xl mx-auto px-6 py-16">
-      <header class="flex items-center justify-between mb-20">
-        <a href="/" class="text-text font-medium tracking-tight hover:opacity-70 transition-opacity">
+  <body class="bg-bg text-text font-serif antialiased">
+    <div class="max-w-2xl mx-auto px-8 pt-16 pb-24">
+      <header class="mb-16">
+        <a href="/" class="inline-block text-xs tracking-widest uppercase border-b border-text pb-0.5 hover:opacity-60 transition-opacity font-serif">
           Tommaso Dreossi
         </a>
-        <nav class="flex gap-8">
-          <a href="/" class="text-muted hover:text-text transition-colors text-sm">Home</a>
-          <a href="/blog" class="text-muted hover:text-text transition-colors text-sm">Blog</a>
-        </nav>
       </header>
       <main>
         <slot />
       </main>
       <footer class="mt-24 pt-8 border-t border-border">
         <div class="flex gap-6">
-          <a href="https://github.com/dreossi" class="text-muted hover:text-text transition-colors text-sm">GitHub</a>
-          <a href="/blog/feed.xml" class="text-muted hover:text-text transition-colors text-sm">RSS</a>
+          <a href="https://github.com/dreossi" class="text-xs tracking-widest uppercase text-muted hover:text-text transition-colors">GitHub</a>
+          <a href="/rss.xml" class="text-xs tracking-widest uppercase text-muted hover:text-text transition-colors">RSS</a>
         </div>
       </footer>
     </div>
