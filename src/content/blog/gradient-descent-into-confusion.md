@@ -1,7 +1,7 @@
 ---
 title: "Gradient Descent into Confusion"
 date: "2026-03-22"
-description: "On how AI renamed mathematics, and what that costs us."
+description: "What backpropagation taught me about how fields name things."
 ---
 
 ### Backpropagation through time
