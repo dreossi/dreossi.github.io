@@ -1,0 +1,91 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  date: string;
+  description?: string;
+}
+
+const { title, date, description } = Astro.props;
+
+const formatted = new Date(date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<Base title={title} description={description}>
+  <article>
+    <header class="mb-12">
+      <a href="/blog" class="text-muted hover:text-text transition-colors text-sm mb-8 inline-block">← Blog</a>
+      <h1 class="text-2xl font-medium tracking-tight text-text mb-3">{title}</h1>
+      <time class="text-muted text-sm font-mono">{formatted}</time>
+    </header>
+    <div class="prose">
+      <slot />
+    </div>
+  </article>
+</Base>
+
+<style>
+  .prose {
+    color: #b0b0b0;
+    line-height: 1.8;
+    font-size: 1rem;
+  }
+  .prose p {
+    margin-bottom: 1.5rem;
+  }
+  .prose h2 {
+    color: #e5e5e5;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .prose h3 {
+    color: #e5e5e5;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .prose a {
+    color: #e5e5e5;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .prose a:hover {
+    opacity: 0.7;
+  }
+  .prose em {
+    color: #c8c8c8;
+    font-style: italic;
+  }
+  .prose strong {
+    color: #e5e5e5;
+    font-weight: 500;
+  }
+  .prose code {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.875rem;
+    background: #1a1a1a;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    color: #c8c8c8;
+  }
+  .prose blockquote {
+    border-left: 2px solid #2a2a2a;
+    padding-left: 1.25rem;
+    color: #888888;
+    font-style: italic;
+    margin: 1.5rem 0;
+  }
+  .prose hr {
+    border: none;
+    border-top: 1px solid #2a2a2a;
+    margin: 2.5rem 0;
+  }
+</style>
