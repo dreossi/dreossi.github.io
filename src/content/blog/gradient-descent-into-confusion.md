@@ -1,6 +1,6 @@
 ---
 title: "Gradient Descent into Confusion"
-date: "2026-03-22"
+date: "2026-03-25"
 description: "What backpropagation taught me about how fields name things."
 ---
 
