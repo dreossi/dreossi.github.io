@@ -7,13 +7,17 @@
 
 <div class="pai-wrap">
   <p class="pai-caption"><strong>Tab. 1</strong> — Physical AI architectures mapped to the Perception–Control–Model–Optimize taxonomy. The table is illustrative rather than comprehensive: entries are representative examples of each combination, not an exhaustive catalog. Hover over a block to see seminal papers.</p>
-  <div class="pai-col-headers">
-    <div class="pai-col-h" id="pai-ch0">Perception</div>
-    <div class="pai-col-h" id="pai-ch1">Control</div>
-    <div class="pai-col-h" id="pai-ch2">Model</div>
-    <div class="pai-col-h" id="pai-ch3">Optimize</div>
+  <div class="pai-scroll">
+    <div class="pai-inner">
+      <div class="pai-col-headers">
+        <div class="pai-col-h" id="pai-ch0">Perception</div>
+        <div class="pai-col-h" id="pai-ch1">Control</div>
+        <div class="pai-col-h" id="pai-ch2">Model</div>
+        <div class="pai-col-h" id="pai-ch3">Optimize</div>
+      </div>
+      <div id="pai-chart"></div>
+    </div>
   </div>
-  <div id="pai-chart"></div>
   <div id="pai-refs"></div>
 </div>
 
@@ -22,6 +26,13 @@
     width: 100%;
     margin: 2rem 0;
     font-family: 'Lora', Georgia, serif;
+  }
+  .pai-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .pai-inner {
+    min-width: 560px;
   }
   .pai-col-headers {
     display: grid;
