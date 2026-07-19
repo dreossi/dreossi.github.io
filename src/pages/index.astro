@@ -4,6 +4,9 @@ import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog'))
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+const formatDate = (date: string) =>
+  new Date(date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 ---
 
 <Base>
@@ -26,7 +29,7 @@ const posts = (await getCollection('blog'))
     </div>
   </section>
 
-  <section>
+  <section id="writing">
     <h2 class="text-xs tracking-widest uppercase text-muted mb-8">Writing</h2>
     <ul class="space-y-8">
       {posts.map((post) => (
@@ -35,6 +38,7 @@ const posts = (await getCollection('blog'))
             <strong class="font-serif font-normal text-lg border-b border-text group-hover:opacity-60 transition-opacity">
               {post.data.title}
             </strong>
+            <span class="ml-2 text-xs tracking-widest uppercase text-muted">{formatDate(post.data.date)}</span>
             {post.data.description && (
               <p class="mt-1 text-muted leading-snug">{post.data.description}</p>
             )}

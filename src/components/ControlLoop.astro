@@ -1,0 +1,171 @@
+---
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+<div class="cl-wrap">
+  <svg width="100%" viewBox="0 0 760 290" xmlns="http://www.w3.org/2000/svg"
+       font-family="Lora, Georgia, serif">
+    <defs>
+      <marker id="cl-arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L8,3 z" fill="#777"/>
+      </marker>
+    </defs>
+
+    <!-- ═══ FORWARD PATH ═══════════════════════════════════════════════ -->
+
+    <!-- w(t) → ⊕₁ -->
+    <line x1="20" y1="120" x2="60" y2="120" stroke="#777" stroke-width="1.5" marker-end="url(#cl-arr)"/>
+    <text x="12" y="113" font-size="11" font-style="italic" fill="#555">w(t)</text>
+
+    <!-- ⊕₁ (error junction) -->
+    <circle cx="80" cy="120" r="18" fill="#fff" stroke="#777" stroke-width="1.5"/>
+    <text x="80" y="126" text-anchor="middle" font-size="18" fill="#777">⊕</text>
+
+    <!-- e(t) → Controller -->
+    <line x1="98" y1="120" x2="155" y2="120" stroke="#777" stroke-width="1.5" marker-end="url(#cl-arr)"/>
+    <text x="116" y="112" font-size="11" font-style="italic" fill="#555">e(t)</text>
+
+    <!-- CONTROLLER dashed outline -->
+    <rect x="155" y="90" width="208" height="60" rx="5"
+          fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <text x="259" y="82" text-anchor="middle" font-size="11" fill="#555" font-style="italic">Controller / Actuator</text>
+
+    <!-- Control (rose) -->
+    <rect x="157" y="92" width="100" height="56" rx="3" fill="hsl(346,62%,42%)"/>
+    <text x="207" y="124" text-anchor="middle"
+          font-family="Playfair Display, Georgia, serif" font-size="15" font-weight="700" fill="#fff">Control</text>
+
+    <!-- Optimize (amber) -->
+    <rect x="259" y="92" width="100" height="56" rx="3" fill="hsl(38,82%,38%)"/>
+    <text x="309" y="124" text-anchor="middle"
+          font-family="Playfair Display, Georgia, serif" font-size="15" font-weight="700" fill="#fff">Optimize</text>
+
+    <!-- u(t) → ⊕₂ -->
+    <line x1="363" y1="120" x2="400" y2="120" stroke="#777" stroke-width="1.5" marker-end="url(#cl-arr)"/>
+    <text x="372" y="112" font-size="11" font-style="italic" fill="#555">u(t)</text>
+
+    <!-- ⊕₂ (disturbance junction) -->
+    <circle cx="418" cy="120" r="18" fill="#fff" stroke="#777" stroke-width="1.5"/>
+    <text x="418" y="126" text-anchor="middle" font-size="18" fill="#777">⊕</text>
+
+    <!-- d(t) disturbance -->
+    <line x1="418" y1="55" x2="418" y2="101" stroke="#777" stroke-width="1.5" marker-end="url(#cl-arr)"/>
+    <text x="425" y="72" font-size="11" font-style="italic" fill="#555">d(t)</text>
+
+    <!-- us(t) → System -->
+    <line x1="436" y1="120" x2="476" y2="120" stroke="#777" stroke-width="1.5" marker-end="url(#cl-arr)"/>
+    <text x="443" y="112" font-size="10" font-style="italic" fill="#555">u<tspan dy="3" font-size="8">s</tspan><tspan dy="-3">(t)</tspan></text>
+
+    <!-- SYSTEM dashed outline -->
+    <rect x="476" y="90" width="128" height="60" rx="5"
+          fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <text x="540" y="82" text-anchor="middle" font-size="11" fill="#555" font-style="italic">System</text>
+
+    <!-- Model (teal) inside System -->
+    <rect x="478" y="92" width="124" height="56" rx="3" fill="hsl(168,58%,28%)"/>
+    <text x="540" y="124" text-anchor="middle"
+          font-family="Playfair Display, Georgia, serif" font-size="15" font-weight="700" fill="#fff">Model</text>
+
+    <!-- y(t) output -->
+    <line x1="604" y1="120" x2="732" y2="120" stroke="#777" stroke-width="1.5" marker-end="url(#cl-arr)"/>
+    <text x="653" y="112" font-size="11" font-style="italic" fill="#555">y(t)</text>
+
+    <!-- ═══ FEEDBACK PATH ═══════════════════════════════════════════════ -->
+
+    <!-- Branch down at x=714 -->
+    <line x1="714" y1="120" x2="714" y2="248" stroke="#777" stroke-width="1.5"/>
+    <!-- Left to Sensor right edge -->
+    <line x1="714" y1="248" x2="566" y2="248" stroke="#777" stroke-width="1.5" marker-end="url(#cl-arr)"/>
+
+    <!-- SENSOR dashed outline -->
+    <rect x="396" y="222" width="168" height="52" rx="5"
+          fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <text x="480" y="214" text-anchor="middle" font-size="11" fill="#555" font-style="italic">Sensor</text>
+
+    <!-- Perception (indigo) inside Sensor -->
+    <rect x="398" y="224" width="164" height="48" rx="3" fill="hsl(229,53%,43%)"/>
+    <text x="480" y="253" text-anchor="middle"
+          font-family="Playfair Display, Georgia, serif" font-size="15" font-weight="700" fill="#fff">Perception</text>
+
+    <!-- ym(t): Sensor left → ⊕₁ bottom -->
+    <line x1="396" y1="248" x2="80" y2="248" stroke="#777" stroke-width="1.5"/>
+    <line x1="80"  y1="248" x2="80"  y2="138" stroke="#777" stroke-width="1.5" marker-end="url(#cl-arr)"/>
+    <text x="234" y="240" text-anchor="middle" font-size="11" font-style="italic" fill="#555">y<tspan dy="3" font-size="8">m</tspan><tspan dy="-3">(t)</tspan></text>
+  </svg>
+
+  <p class="cl-caption">
+    <strong>Fig. 2</strong> — Mapping Physical AI to closed-loop control.
+    Illustration of a closed-loop control system consisting of
+    set point <em>w</em>(<em>t</em>),
+    measured output <em>y</em><sub>m</sub>(<em>t</em>),
+    measured error <em>e</em>(<em>t</em>),
+    controller output <em>u</em>(<em>t</em>),
+    system input <em>u</em><sub>s</sub>(<em>t</em>),
+    disturbance <em>d</em>(<em>t</em>),
+    and system output <em>y</em>(<em>t</em>).
+    Colored blocks show where each Physical AI branch operates within the loop.
+  </p>
+</div>
+
+<style is:global>
+  .pai-figure {
+    margin: 1.5rem 0 2rem;
+  }
+  .pai-figure img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+  }
+  .pai-figure figcaption {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+    margin-top: 8px;
+    line-height: 1.6;
+  }
+  .pai-figure figcaption a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  .pai-figure figcaption strong {
+    font-style: normal;
+    color: #555;
+  }
+  .pai-footnote-rule {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 3rem 0 1rem;
+  }
+  .pai-footnotes {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.78rem;
+    color: #999;
+    line-height: 1.7;
+    padding-left: 1.2rem;
+  }
+  .pai-footnotes a {
+    color: #bbb;
+  }
+  .cl-wrap {
+    width: 100%;
+    margin: 1.5rem 0 2rem;
+    font-family: 'Lora', Georgia, serif;
+  }
+  .cl-caption {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 8px 0 0;
+    text-align: left;
+  }
+  .cl-caption strong {
+    font-style: normal;
+    color: #555;
+  }
+</style>
