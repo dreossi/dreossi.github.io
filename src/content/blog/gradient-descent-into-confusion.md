@@ -75,8 +75,10 @@ a certain level of uncertainty and asking "what is this, really?" before accepti
 
 One last thing: the psychological journey from hearing a term for the first time to either recognizing it or realizing you already knew it has a well-established name in the AI field. It's called *gradient descent into confusion*.
 
----
+<hr class="pai-footnote-rule" />
 
-<p id="fn1"><sup>1</sup> Some purists might argue that the chain rule is the mathematical foundation while backpropagation is the implementation.</p>
-<p id="fn2"><sup>2</sup> <a href="https://en.wikipedia.org/wiki/Attention_Is_All_You_Need">Attention Is All You Need, Wikipedia</a></p>
-<p id="fn3"><sup>3</sup> Steven Strogatz, <em>Infinite Powers</em> (2019)</p>
+<ol class="pai-footnotes">
+  <li id="fn1">Some purists might argue that the chain rule is the mathematical foundation while backpropagation is the implementation.</li>
+  <li id="fn2"><a href="https://en.wikipedia.org/wiki/Attention_Is_All_You_Need">Attention Is All You Need, Wikipedia</a></li>
+  <li id="fn3">Steven Strogatz, <em>Infinite Powers</em> (2019)</li>
+</ol>
